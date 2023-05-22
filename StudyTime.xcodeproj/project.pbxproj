@@ -11,6 +11,15 @@
 		8FB974642A18B0B400A65069 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974632A18B0B400A65069 /* ContentView.swift */; };
 		8FB974662A18B0B700A65069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB974652A18B0B700A65069 /* Assets.xcassets */; };
 		8FB9746A2A18B0B700A65069 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB974692A18B0B700A65069 /* Preview Assets.xcassets */; };
+		8FB974712A18B10F00A65069 /* TimeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974702A18B10F00A65069 /* TimeProgressView.swift */; };
+		8FB974732A18C22F00A65069 /* TimeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974722A18C22F00A65069 /* TimeModel.swift */; };
+		8FB974752A18EF4300A65069 /* TimeProgressGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974742A18EF4300A65069 /* TimeProgressGroupView.swift */; };
+		8FB974772A1A14A000A65069 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974762A1A14A000A65069 /* Utils.swift */; };
+		8FB974792A1A179E00A65069 /* ListeningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974782A1A179E00A65069 /* ListeningModel.swift */; };
+		8FB974812A1A192700A65069 /* TimeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974802A1A192700A65069 /* TimeTextView.swift */; };
+		8FB974832A1A19E100A65069 /* Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974822A1A19E100A65069 /* Ex.swift */; };
+		8FB974852A1A1F8F00A65069 /* AnimationReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974842A1A1F8F00A65069 /* AnimationReader.swift */; };
+		8FB974872A1A26A800A65069 /* TimeProgressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB974862A1A26A800A65069 /* TimeProgressViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		8FB974652A18B0B700A65069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB974672A18B0B700A65069 /* StudyTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyTime.entitlements; sourceTree = "<group>"; };
 		8FB974692A18B0B700A65069 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8FB974702A18B10F00A65069 /* TimeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProgressView.swift; sourceTree = "<group>"; };
+		8FB974722A18C22F00A65069 /* TimeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeModel.swift; sourceTree = "<group>"; };
+		8FB974742A18EF4300A65069 /* TimeProgressGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProgressGroupView.swift; sourceTree = "<group>"; };
+		8FB974762A1A14A000A65069 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8FB974782A1A179E00A65069 /* ListeningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningModel.swift; sourceTree = "<group>"; };
+		8FB974802A1A192700A65069 /* TimeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTextView.swift; sourceTree = "<group>"; };
+		8FB974822A1A19E100A65069 /* Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ex.swift; sourceTree = "<group>"; };
+		8FB974842A1A1F8F00A65069 /* AnimationReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationReader.swift; sourceTree = "<group>"; };
+		8FB974862A1A26A800A65069 /* TimeProgressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeProgressViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +70,10 @@
 		8FB974602A18B0B400A65069 /* StudyTime */ = {
 			isa = PBXGroup;
 			children = (
+				8FB9747C2A1A181900A65069 /* Utils */,
+				8FB9747B2A1A17FD00A65069 /* View */,
+				8FB9747A2A1A17F000A65069 /* Model */,
 				8FB974612A18B0B400A65069 /* StudyTimeApp.swift */,
-				8FB974632A18B0B400A65069 /* ContentView.swift */,
 				8FB974652A18B0B700A65069 /* Assets.xcassets */,
 				8FB974672A18B0B700A65069 /* StudyTime.entitlements */,
 				8FB974682A18B0B700A65069 /* Preview Content */,
@@ -67,6 +87,37 @@
 				8FB974692A18B0B700A65069 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8FB9747A2A1A17F000A65069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB974862A1A26A800A65069 /* TimeProgressViewModel.swift */,
+				8FB974722A18C22F00A65069 /* TimeModel.swift */,
+				8FB974782A1A179E00A65069 /* ListeningModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB9747B2A1A17FD00A65069 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FB974702A18B10F00A65069 /* TimeProgressView.swift */,
+				8FB974742A18EF4300A65069 /* TimeProgressGroupView.swift */,
+				8FB974632A18B0B400A65069 /* ContentView.swift */,
+				8FB974802A1A192700A65069 /* TimeTextView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB9747C2A1A181900A65069 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8FB974762A1A14A000A65069 /* Utils.swift */,
+				8FB974822A1A19E100A65069 /* Ex.swift */,
+				8FB974842A1A1F8F00A65069 /* AnimationReader.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +191,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB974642A18B0B400A65069 /* ContentView.swift in Sources */,
+				8FB974792A1A179E00A65069 /* ListeningModel.swift in Sources */,
+				8FB974872A1A26A800A65069 /* TimeProgressViewModel.swift in Sources */,
+				8FB974832A1A19E100A65069 /* Ex.swift in Sources */,
+				8FB974852A1A1F8F00A65069 /* AnimationReader.swift in Sources */,
 				8FB974622A18B0B400A65069 /* StudyTimeApp.swift in Sources */,
+				8FB974732A18C22F00A65069 /* TimeModel.swift in Sources */,
+				8FB974812A1A192700A65069 /* TimeTextView.swift in Sources */,
+				8FB974752A18EF4300A65069 /* TimeProgressGroupView.swift in Sources */,
+				8FB974712A18B10F00A65069 /* TimeProgressView.swift in Sources */,
+				8FB974772A1A14A000A65069 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var listeningModel = ListeningModel()
+    
+//    init() {
+//        listeningModel.startTimer()
+//    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        TimeProgressGroupView()
+            .environmentObject(listeningModel)
     }
 }
 
